@@ -1,5 +1,5 @@
-##Install in Amazon Ubuntu
 #!/bin/bash
+#Install in Amazon Ubuntu
 sudo apt update -y
 
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
@@ -10,10 +10,10 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 sudo apt update -y
 
-apt-cache policy docker-ce -y
+apt-cache policy docker-ce
 
 sudo apt install docker-ce -y
 
-#sudo systemctl status docker
+sudo systemctl status docker
 
-sudo chmod 777 /var/run/docker.sock
+sudo chmod 666 /var/run/docker.sock
