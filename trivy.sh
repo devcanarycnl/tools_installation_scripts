@@ -1,4 +1,5 @@
-# A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI.
+#!/bin/bash
+# Install Trivy vulnerability scanner
 
 sudo apt-get install wget apt-transport-https gnupg lsb-release
 wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
